@@ -21,6 +21,27 @@ public class BoundedBuffer<V> extends BaseBoundedBuffer<V> {
 		notifyAll();
 	}
 
+	/**
+	 * 首先，仅当缓存从空变为非空，或从满转为非满时，才需要释放一个线程。
+	 * 并且，仅当 put 或 take 影响到这些状态转换时，才发出通知。
+	 * 
+	 * @param v
+	 * @throws InterruptedException
+	 */
+	public synchronized void putImprove(V v) throws InterruptedException {
+		while (isFull()) {
+			wait();
+		}
+
+		boolean isEmpty = isEmpty();
+
+		doPut(v);
+
+		if (isEmpty) {
+			notifyAll();
+		}
+	}
+
 	public synchronized V take() throws InterruptedException {
 		while (isEmpty()) {
 			wait();
