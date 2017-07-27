@@ -4,7 +4,7 @@
 package chapter04;
 
 /**
- *
+ * 通过一个私有锁来保护状态
  */
 public class ThreadSafeCounter {
 
