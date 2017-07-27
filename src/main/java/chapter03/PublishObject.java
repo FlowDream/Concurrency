@@ -8,9 +8,6 @@ import java.util.Set;
 
 /**
  * 发布一个对象
- * 
- * @author hzguantao
- *
  */
 public class PublishObject {
 	
