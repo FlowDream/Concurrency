@@ -1,7 +1,7 @@
 /**
  * 
  */
-package chapter13;
+package chapter14;
 
 /**
  * 使用 wait 和 notifyAll 来实现可重新关闭的阀门

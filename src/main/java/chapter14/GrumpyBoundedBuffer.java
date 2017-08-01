@@ -1,7 +1,7 @@
 /**
  * 
  */
-package chapter13;
+package chapter14;
 
 /**
  * 当不满足前提条件时，有界缓存不会执行相应的操作

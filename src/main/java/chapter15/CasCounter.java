@@ -1,7 +1,7 @@
 /**
  * 
  */
-package chapter13;
+package chapter15;
 
 /**
  * 基于 CAS 实现的非阻塞计数器

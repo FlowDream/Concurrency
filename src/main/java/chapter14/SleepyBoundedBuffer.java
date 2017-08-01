@@ -1,7 +1,7 @@
 /**
  * 
  */
-package chapter13;
+package chapter14;
 
 /**
  * 使用简单阻塞实现的有界缓存

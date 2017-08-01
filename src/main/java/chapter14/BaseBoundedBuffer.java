@@ -1,7 +1,7 @@
 /**
  * 
  */
-package chapter13;
+package chapter14;
 
 /**
  * 有界缓存实现的基类
